@@ -3,7 +3,7 @@ from bottle import route, run
 from bottle import template,view, bottle
 APP = bottle.Bottle()
 @APP.get('/info')
-@APP.view('info')
+@APP.view('info.html')
 def info():
         name = '戴儒锋'
         age = '30'
