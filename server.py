@@ -1,6 +1,6 @@
 
 import bottle, Bottle
-APP = Bottle()
+APP = bottle.Bottle()
 @APP.route('/')
 def index():
     return '<p>Hello</p>'
