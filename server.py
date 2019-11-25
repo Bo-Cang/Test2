@@ -11,4 +11,4 @@ def qq():
 def hello():
     return '<p>Hello in hello 111</p>'
 if __name__ == '__main__':
-    APP.run(application=APP)
+    bottle.run(application=APP)
