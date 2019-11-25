@@ -1,1 +1,1 @@
-web: gunicorn bottle:APP --log-file -
+web: gunicorn server:APP --log-file -
