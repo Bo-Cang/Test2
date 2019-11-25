@@ -1,17 +1,14 @@
-
-from bottle import route, run
-from bottle import template,view, bottle
+from bottle import route, run, template, request, static_file, redirect, bottle
 APP = bottle.Bottle()
-@APP.get('/info')
-@APP.view('info.html')
-def info():
-        name = '戴儒锋'
-        age = '30'
-        blog = 'www.linuxyw.com'
-        qq = '63780668'
-        book = ['python','linux','php']
-        price = {'pc':4000,'phone':2000,'bike':600}
-        data = {'tname':name,'tage':age,'tblog':blog, 'tqq': qq,'tbook':book,'tprice':price,'tnum':''}
-        return data
+@APP.get('/')
+def hello():
+    return "hello world in hello"
+    
+@APP.get('/1/')
+def HELLO():
+    return redirect("/2/")
+@APP.get('/2/')
+def hello2():
+    return "Hello world in hello2"
 if __name__ == '__main__':
     bottle.run(application=APP)
