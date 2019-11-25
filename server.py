@@ -1,13 +1,13 @@
 
 import bottle, Bottle
 APP = bottle.Bottle()
-@APP.route('/')
+@APP.get('/')
 def index():
     return '<p>Hello</p>'
-@APP.route('/q')
+@APP.get('/q')
 def qq():
     return redirect('/h')
-@APP.route('/h')
+@APP.get('/h')
 def hello():
     return '<p>Hello in hello 111</p>'
 if __name__ == '__main__':
