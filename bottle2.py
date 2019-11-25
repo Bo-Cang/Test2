@@ -1,7 +1,7 @@
 from bottle import route, run, template, request, static_file, redirect, bottle
 APP = bottle.Bottle()
 @APP.get('/')
-def hello():
+def index():
     return "hello world in hello"
     
 @APP.get('/1/')
