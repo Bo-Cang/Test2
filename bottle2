@@ -1,0 +1,7 @@
+from bottle import route, run, template, request, static_file, redirect, bottle
+APP = bottle.Bottle()
+@APP.get('/')
+def hello():
+    return template('hello_template', context)
+if __name__ == '__main__':
+    bottle.run(application=APP)
