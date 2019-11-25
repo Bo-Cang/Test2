@@ -5,7 +5,7 @@ APP = bottle.Bottle()
 def index():
     return '<p>Hello</p>'
 @APP.get('/q')
-def index():
+def qq():
     return redirect("/h")
 @APP.get('/h')
 def hello():
