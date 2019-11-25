@@ -1,5 +1,5 @@
 
-import bottle
+import bottle, indirect
 APP = bottle.Bottle()
 @APP.get('/')
 def index():
