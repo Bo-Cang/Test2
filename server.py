@@ -1,14 +1,14 @@
 
-import bottle
-APP = bottle.Bottle()
-@APP.get('/')
+import bottle, Bottle
+APP = Bottle()
+@APP.route('/')
 def index():
     return '<p>Hello</p>'
-@APP.get('/q')
+@APP.route('/q')
 def qq():
     return redirect('/h')
-@APP.get('/h')
+@APP.route('/h')
 def hello():
     return '<p>Hello in hello 111</p>'
 if __name__ == '__main__':
-    bottle.run(application=APP)
+    APP.run(application=APP)
