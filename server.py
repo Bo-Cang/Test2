@@ -1,10 +1,10 @@
 
-import bottle, redirect
+import bottle, redirect, route
 APP = bottle.Bottle()
 @APP.get('/')
 def index():
     return '<p>Hello</p>'
-@APP.get('/q')
+@APP.route('/q')
 def qq():
     redirect('/h')
 @APP.get('/h')
