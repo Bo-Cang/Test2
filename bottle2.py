@@ -6,7 +6,7 @@ def hello():
     
 @APP.get('/1/')
 def HELLO():
-    return redirect("/2/")
+    return redirect('/2/')
 @APP.get('/2/')
 def hello2():
     return "Hello world in hello2"
