@@ -1,5 +1,5 @@
 
-import bottle, indirect
+import bottle, redirect
 APP = bottle.Bottle()
 @APP.get('/')
 def index():
