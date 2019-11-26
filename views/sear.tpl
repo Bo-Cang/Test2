@@ -1,9 +1,7 @@
 <html>
-  <head>
-    <title>Sample App Home</title>
-  </head>
-  <body>
-      <h2>Пример приложения</h2>
-      <p>Пример приложения для heroku на bottle.</p>
-  </body>
+    <head><title>123</title></head>
+    <body>
+         <h1>123</h1>
+         213123
+    </body>
 </html>
