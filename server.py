@@ -6,10 +6,10 @@ APP = bottle.Bottle()
 @APP.get("/")
 def index():
     return "<h1>Success!</h1>"
-@APP.get("/a")
+@APP.route("/a")
 def index():
     return "<h1>Success22!</h1>"
-@APP.get("/q")
+@APP.route("/q")
 def dd():
     return template('sear.tpl', info)
 
