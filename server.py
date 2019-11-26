@@ -1,15 +1,35 @@
+import os
+from datetime import datetime as dt
+from random import randrange
 
-import bottle
-from bottle import redirect
-APP = bottle.Bottle()
-@APP.get('/')
+from bottle import route, run, static_file, view
+
+
+@route("/")
 def index():
-    return '<p>Hello</p>'
-@APP.get('/q')
-def qq():
-    redirect('/h')
-@APP.get('/h')
-def hello():
-    return '<p>Hello in hello 111</p>'
-if __name__ == '__main__':
-    bottle.run(application=APP)
+    return "<h1>Success!</h1>"
+
+
+@route("/api/roll/<some_id:int>")
+def example_api_response(some_id):
+    return {
+        "requested_id": some_id,
+        "random_number": randrange(some_id)
+    }
+
+
+@route("/home")
+@view("home")
+def example_template_render():
+    return {"now": dt.now().isoformat()}
+
+
+@route('/css/<filename>')
+def send_css(filename):
+    return static_file(filename, root='static/css')
+
+
+if os.environ.get('APP_LOCATION') == 'heroku':
+    run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+else:
+    run(host='localhost', port=8080, debug=True)
