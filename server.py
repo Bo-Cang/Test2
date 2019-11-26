@@ -7,7 +7,7 @@ def index():
     return "<h1>Success!</h1>"
 
 @APP.get("/q")
-@view("home")
+@APP.view("sear.tpl")
 def example_template_render():
     return {"now": dt.now().isoformat()}
 
