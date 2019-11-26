@@ -8,8 +8,9 @@ def index():
     return "<h1>Success!</h1>"
 
 @APP.get("/q")
+@APP.views()
 def dd():
-    return template('./views/sear.tpl', context)
+    return template('./views/sear.tpl', info)
 
 if __name__ == '__main__':
     bottle.run(application=APP)
