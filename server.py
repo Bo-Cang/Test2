@@ -9,7 +9,7 @@ def index():
 
 @APP.get("/q")
 def dd():
-    return template('sear.tpl', info)
+    template('sear.tpl', info)
 
 if __name__ == '__main__':
     bottle.run(application=APP)
