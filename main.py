@@ -14,5 +14,5 @@ def index():
     return template('sear.tpl', info)
 
 if __name__ == '__main__':
-    bottle.run(application=APP)
+    APP.run()
 
