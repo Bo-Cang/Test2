@@ -10,7 +10,7 @@ def index():
 def index():
     return "<h1>Success22!</h1>"
 @APP.route("/q")
-def dd():
+def index():
     return template('sear.tpl', info)
 
 if __name__ == '__main__':
