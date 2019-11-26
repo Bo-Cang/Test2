@@ -8,7 +8,6 @@ def index():
     return "<h1>Success!</h1>"
 
 @APP.get("/q")
-@APP.views()
 def dd():
     return template('./views/sear.tpl', info)
 
