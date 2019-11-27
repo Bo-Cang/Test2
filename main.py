@@ -1,7 +1,6 @@
 from bottle import view
 import bottle
 from bottle import template
-import sqlites3
 APP = bottle.Bottle()
 @APP.get("/")
 def index():
