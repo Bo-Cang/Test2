@@ -9,8 +9,15 @@
   <h1>MySearcher</h1>
   <p>Please enter the keyword</p>
 </div>
-<form>
-<input class="form-control btn-default" type="text" name="keyword" placeholder="Keywords" value="{{keyword}}">
-   <button class="btn btn-primary" type="submit" >Submit</button>
-</form>
+<body>
+
+    <form method="post" action="q">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
 </html>
