@@ -13,7 +13,7 @@
 
     <form method="post" action="q">
         <div>
-            <label for="name">Name:</label>
+            <label for="name">Keyword:</label>
             <input type="text" id="name" name="keyword" value="{{keyword}}">
         </div>
         <button type="submit">Submit</button>
