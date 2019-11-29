@@ -18,6 +18,34 @@
         </div>
         <button type="submit">Submit</button>
     </form>
+<table class="table">
+    % if not page_list:
 
+    <tr>
+    <td>
+        <br>
+        <br>
+        <h2>Do not find any similar data</h2>
+        <br>
+        <br>
+    </td>
+    </tr>
+    % end
+
+   %for page in page_list:
+    <tr>
+    <td>
+        <a class="btn-light" target="view_window" href="{{page[1]}}">
+            {{page[3]}}
+        </a>
+        <br>
+        <br>
+        {{page[2]}}
+        <br>
+        <br>
+    </td>
+    </tr>
+   %end
+</table>
 </body>
 </html>
