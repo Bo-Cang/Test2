@@ -10,7 +10,7 @@
   <p>Please enter the keyword</p>
 </div>
 <form>
-<input class="form-control btn-default"
+<input class="form-control btn-default" type="text" name="keyword" placeholder="Keywords" value="{{keyword}}">
    <button class="btn btn-primary" type="submit" >Submit</button>
 </form>
 </html>
