@@ -14,7 +14,7 @@
     <form method="post" action="q">
         <div>
             <label for="name">Keyword:</label>
-            <input type="text" id="name" name="keyword" value="{{keyword}}">
+            <input type="text" id="name" name="keyword">
         </div>
         <button type="submit">Submit</button>
     </form>
