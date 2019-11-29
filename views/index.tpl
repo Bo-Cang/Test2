@@ -9,10 +9,8 @@
   <h1>MySearcher</h1>
   <p>Please enter the keyword</p>
 </div>
-<form action="https://first-bo.herokuapp.com/q">
 <input class="form-control btn-default"
        style="float: left; width: 60%;" type="text" name="keyword"
         placeholder="Keywords" value="{{keyword}}">
    <button class="btn btn-primary" type="submit" >Submit</button>
-</form>
 </html>
