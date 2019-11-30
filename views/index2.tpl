@@ -14,8 +14,7 @@
 </div>
 
 <form action="/q">
-<input class="form-control btn-default"
-       style="float: left; width: 60%;" type="text" name="keyword"
+<input class="form-control btn-default" type="text" name="keyword"
         placeholder="Keywords" value="{{keyword}}">
    <button class="btn btn-primary" type="submit" >Submit</button>
 </form>
