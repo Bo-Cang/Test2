@@ -10,13 +10,10 @@
   <p>Please enter the keyword</p>
 </div>
 <body>
-
     <form method="post" action="q">
-        <div>
-            <label for="name">Keyword:</label>
-            <input type="text" id="name" name="keyword">
-        </div>
-        <button type="submit">Submit</button>
+         <input type="text" name="keyword"
+         placeholder="Keywords" value="{{keyword}}">
+         <type="submit" >Submit</button>
     </form>
 <table class="table">
     % if not page_list:
