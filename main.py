@@ -1,5 +1,6 @@
 from bottle import view
 import bottle
+import wordninja
 from bottle import template
 import sqlite3
 APP = bottle.Bottle()
