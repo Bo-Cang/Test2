@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
    <head>
         <title>BBSearcher</title>
@@ -14,7 +13,7 @@
   <p>Please enter the keyword</p>
 </div>
 
-<form action="https://first-bo.herokuapp.com/q">
+<form action="/q">
 <input class="form-control btn-default"
        style="float: left; width: 60%;" type="text" name="keyword"
         placeholder="Keywords" value="{{keyword}}">
